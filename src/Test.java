@@ -17,6 +17,7 @@ import javafx.scene.ImageCursor;
 public class Test extends Application{
 	Map map;
 	public void start(Stage stage) throws FileNotFoundException {
+	
 		//creating pane
 		GridPane chooseHero = new GridPane();
 		chooseHero.setPadding(new Insets(80, 80, 120, 190));
@@ -32,14 +33,14 @@ public class Test extends Application{
 		Image Yen = new Image(new FileInputStream("HeroImgs/Yen.jpeg"));  
 		ImageView YenImg = new ImageView(Yen);
 		
-		Media media = new Media((new File("IntroGame.mp4").toURI().toString()));
+		Media media = new Media((new File("mma.mp4").toURI().toString()));
 		MediaPlayer player = new MediaPlayer(media);
 		MediaView view = new MediaView(player);
 		view.setFitWidth(1400);
 		view.setFitHeight(1400);
 		player.play();
 		
-		Media sound = new Media((new File("sounds//backsound_civil.mp3").toURI().toString()));
+		Media sound = new Media((new File("sounds/backsound_civil.mp3").toURI().toString()));
 		MediaPlayer backsound = new MediaPlayer(sound);
 		
 		//pane for intro video
@@ -75,7 +76,7 @@ public class Test extends Application{
 		chooseHero.add(CiriImg,1,0);
 		chooseHero.add(YenImg,2,0);
 		//background
-		chooseHero.setStyle("-fx-background-image: url('file:C:/Users/user/eclipse-workspace/DecoratorPattern/backgrounds/mainback.jpg')");
+		chooseHero.setStyle("-fx-background-image: url('file:C:/Users/GGnet/eclipse-workspace/MyGame/project/backgrounds/mainback.jpg')");
 		
 		//glow and growth effect when mouse is pointing
 		HeraldImg.setOnMouseEntered(e -> 
@@ -151,7 +152,6 @@ public class Test extends Application{
 		});
 		
 		CiriImg.setOnMouseClicked(e->{
-			
 			try {
 				Heroes hero = new Ciri();
 				map = new Map(stage,hero);
@@ -162,7 +162,6 @@ public class Test extends Application{
 			stage.setFullScreen(true);
 			stage.setTitle("Hero Adventures!");
 			stage.show();
-			
 		});
 		
 		Scene scene = new Scene(introPane,1300,700);

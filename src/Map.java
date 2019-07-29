@@ -16,7 +16,7 @@ public class Map extends Pane {
 	Test test;
 	int lvl;
 	public Map(Stage stage,Heroes hero) throws FileNotFoundException {
-		Image cursor = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/Imgs/Cursor.png"));//Image of new Cursor
+		Image cursor = new Image(new FileInputStream("Imgs/Cursor.png"));//Image of new Cursor
 		//glow effect
 		DropShadow shadow = new DropShadow();
 		shadow.setColor(Color.RED);
@@ -26,11 +26,11 @@ public class Map extends Pane {
 		shadow.setWidth(50);
 	
 		//circles with enemies  
-		Image gnoll = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/monsterImgs/gnoll.jpg"));
-		Image Harpii = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/monsterImgs/harpy.jpg"));
-		Image Ogre = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/monsterImgs/ogre.jpg"));
-		Image ghoul = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/monsterImgs/ghoul.jpg"));
-		Image drake = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/monsterImgs/questionmark.jpg"));
+		Image gnoll = new Image(new FileInputStream("monsterImgs/gnoll.jpg"));
+		Image Harpii = new Image(new FileInputStream("monsterImgs/harpy.jpg"));
+		Image Ogre = new Image(new FileInputStream("monsterImgs/ogre.jpg"));
+		Image ghoul = new Image(new FileInputStream("monsterImgs/ghoul.jpg"));
+		Image drake = new Image(new FileInputStream("monsterImgs/questionmark.jpg"));
 		
 		Circle circle1 = new Circle();
 		circle1.setCenterX(400);
@@ -115,7 +115,7 @@ public class Map extends Pane {
 		});
 		
 	    //our Map
-		Image map = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/backgrounds/Map.jpeg"));  
+		Image map = new Image(new FileInputStream("backgrounds/Map.jpeg"));  
 		ImageView mapImg = new ImageView(map); 
 		mapImg.setFitHeight(780);
 		mapImg.setFitWidth(1380);
@@ -202,7 +202,7 @@ public class Map extends Pane {
 		gold.setHeight(150);
 		gold.setWidth(150);
 		
-		Image shop = new Image(new FileInputStream("C:/Users/user/eclipse-workspace/DecoratorPattern/hut.png"));
+		Image shop = new Image(new FileInputStream("hut.png"));
 		ImageView shopImg = new ImageView(shop);
 		shopImg.setFitWidth(110);
 		shopImg.setFitHeight(95);

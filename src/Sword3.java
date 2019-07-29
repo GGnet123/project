@@ -3,7 +3,7 @@ public class Sword3 extends HeroDecorator{
 	Heroes hero;
 	public Sword3(Heroes hero) {
 		this.hero = hero;
-		attack = AttackPower()+15;
+		attack = AttackPower()+30;
 		url = hero.url;
 		shoplink1 = hero.shoplink1;
 		shoplink2 = hero.shoplink2;

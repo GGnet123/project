@@ -250,7 +250,7 @@ public class Shop extends Pane{
     		}
     		if(tab2.isSelected()) {
     			cash-=10000;
-    			this.hero.hp =hero.getHP() + 400;
+    			this.hero.hp = hero.getHP() + 400;
     		}
 			try {
 				PrintWriter writer = new PrintWriter("Money.txt", "UTF-8");
