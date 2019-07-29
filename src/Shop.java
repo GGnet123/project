@@ -73,7 +73,7 @@ public class Shop extends Pane{
     imageView4.setFitWidth(350);
     imageView4.setRotate(-50);
     ////////////////////////////////////////////////////////
-    setStyle("-fx-background-image: url('file:C:/Users/user/eclipse-workspace/DecoratorPattern/backgrounds/shop2.jpg'); "
+    setStyle("-fx-background-image: url('file:C:/Users/GGnet/eclipse-workspace/MyGame/project/backgrounds/shop2.jpg'); "
     		+ "-fx-background-repeat: repeat;" + "-fx-background-size: 1300 800;");
     ////////////////////////////////////////////////////////
     HBox weapons = new HBox();
@@ -137,7 +137,7 @@ public class Shop extends Pane{
     
     tab.setGraphic(icon1);
     tab2.setGraphic(icon2);
-    getStylesheets().addAll("file:C://Users//user//eclipse-workspace//DecoratorPattern//shop.css");
+    getStylesheets().addAll("file:C:/Users/GGnet/eclipse-workspace/MyGame/project/shop.css");
 	///////////////////////////////////////////////////////////////
     //buttons set on action
     btn1.setOnAction(e->{
